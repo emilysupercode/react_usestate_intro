@@ -1,0 +1,44 @@
+.DayNightSection {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border: 10px solid gray;
+}
+
+.daySettings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: skyblue;
+    color: midnightblue;
+    transition: all 1s linear;
+}
+
+.nightSettings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: midnightblue;
+    color: skyblue;
+    transition: all 1s linear;
+}
+
+.DayNightH2 {
+    font-size: 2rem;
+}
+
+.DayNightP {
+    font-size: 2rem;
+}
+
+.DayNightButton {
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 1.6rem;
+    background-color: orange;
+    transition: all 1s linear;
+}

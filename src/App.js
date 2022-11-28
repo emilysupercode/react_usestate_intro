@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
+import DayNightSwitch from "./components/daynight/DayNight";
+import FAQSection from "./components/faq/FAQSection";
+import ShowInput from "./components/input/Input";
+
 
 function App() {
+  let [count, setCount] = useState(0);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="counterSection">
+        <h1>1_1, Counter {count}</h1>
+        <button className="button" onClick={() => setCount(count + 1)}>+</button>
+        <button className="button" onClick={() => setCount(count - 1)}>-</button>
+        <button className="button" onClick={() => setCount(0)}>reset</button>
+      </section>
+      <FAQSection />
+      <DayNightSwitch />
+      <ShowInput />
     </div>
+
   );
 }
 

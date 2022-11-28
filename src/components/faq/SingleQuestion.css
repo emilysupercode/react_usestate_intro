@@ -1,0 +1,35 @@
+.FAQSection {
+    background-color: slateblue;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.FAQdisplayQuestion {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FAQdisplayQuestion p {
+    font-size: 2rem;
+}
+
+.openCloseDropDownButton {
+    font-size: 2rem;
+    width: 30px;
+}
+
+hr {
+    margin: 0 50px;
+}
+
+#FAQdropdown {
+    display: block;
+}
+
+.regularP {
+    margin: 0 50px;
+    border-top: 1px solid black;
+    font-size: 1.8rem;
+    padding: 10px;
+}
